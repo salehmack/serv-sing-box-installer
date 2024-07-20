@@ -19,7 +19,7 @@
           "enabled": true
         },
         "transport": {
-          "type": "ws",
+          "type": "httpupgrade",
           "path": "/download",
           "headers": {
             "Host": "download.windowsupdate.com"
