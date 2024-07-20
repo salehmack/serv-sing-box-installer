@@ -51,14 +51,14 @@ sudo -i
 mkdir -p ./sing-box && cd ./sing-box
 
 # install
-bash <(curl -sSL https://raw.githubusercontent.com/RayWangQvQ/sing-box-installer/main/install.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/salehmack/serv-sing-box-installer/main/install.sh)
 ```
 
 serv00：
 ```
 # create a dir
 mkdir -p ./sing-box && cd ./sing-box
-bash <(curl -sSL https://raw.githubusercontent.com/RayWangQvQ/sing-box-installer/main/install-serv00.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/salehmack/serv-sing-box-installer/main/install-serv00.sh)
 ```
 
 ## 1. 大概介绍下
@@ -131,7 +131,7 @@ sudo -i
 mkdir -p ./sing-box && cd ./sing-box
 
 # install
-bash <(curl -sSL https://raw.githubusercontent.com/RayWangQvQ/sing-box-installer/main/install.sh)
+bash <(curl -sSL https://raw.githubusercontent.com/salehmack/serv-sing-box-installer/main/install.sh)
 ```
 
 运行后会让输入参数：
