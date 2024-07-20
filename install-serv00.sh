@@ -543,13 +543,13 @@ get_sub(){
     port_vmess=$(jq -r '.inbounds[0].listen_port' <<< "$JSON")
     proxy_uuid=$(jq -r '.inbounds[0].users[0].uuid' <<< "$JSON")
     domain=$(cat $domain_file)
-    sub_vmess="vmess://$(echo "{\"add\":\"$domain\",\"aid\":\"0\",\"host\":\"download.windowsupdate.com\",\"id\":\"$proxy_uuid\",\"net\":\"ws\",\"path\":\"/download\",\"port\":\"$port_vmess\",\"ps\":\"serv00-vmess\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"\",\"v\":\"2\"}" | base64 -w0 )"
+    sub_vmess="vmess://$(echo "{\"add\":\"$domain\",\"aid\":\"0\",\"host\":\"download.windowsupdate.com\",\"id\":\"$proxy_uuid\",\"net\":\"httpupgrade\",\"path\":\"/download\",\"port\":\"$port_vmess\",\"ps\":\"serv00-vmess\",\"scy\":\"auto\",\"sni\":\"\",\"tls\":\"\",\"type\":\"\",\"v\":\"2\"}" | base64 -w0 )"
     echo "订阅：$sub_vmess"
     echo "服务器：$domain"
     echo "端口：$port_vmess"
     echo "UUID：$proxy_uuid"
     echo "Alter Id：0"
-    echo "传输：ws"
+    echo "传输：httpupgrade"
     echo "Path：/download"
     echo "Host：download.windowsupdate.com"
     echo ""
