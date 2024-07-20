@@ -521,7 +521,7 @@ check_result() {
         echo "端口：8080"
         echo "UUID：$proxy_uuid"
         echo "Alter Id：0"
-        echo "传输：ws"
+        echo "传输：httpupgrade"
         echo "Path：/download"
         echo "Host：download.windowsupdate.com"
         echo ""
